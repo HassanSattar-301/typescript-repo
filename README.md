@@ -20,10 +20,10 @@ Find out more about Swagger: [https://swagger.io](https://swagger.io)
 Run the following command from your project directory to install the package from npm:
 
 ```bash
-npm install demo-vender@1.5.1
+npm install demo-vender@1.5.0
 ```
 
-For additional package details, see the [Npm page for the demo-vender@1.5.1 npm](https://www.npmjs.com/package/demo-vender/v/1.5.1).
+For additional package details, see the [Npm page for the demo-vender@1.5.0 npm](https://www.npmjs.com/package/demo-vender/v/1.5.0).
 
 ## Initialize the API Client
 
