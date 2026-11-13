@@ -1,9 +1,9 @@
 # Reference
 
-> Source: [ApimaticCalculatorClient](src/client.ts)
+> Source: [ApimaticCalculatorTestClient](src/client.ts)
 
 <details>
-<summary><code>calculate(request: ApimaticCalculatorClient.CalculateRequest, options?: RequestOptions): ApiPromise&lt;number, ApiError&gt;</code></summary>
+<summary><code>calculate(request: ApimaticCalculatorTestClient.CalculateRequest, options?: RequestOptions): ApiPromise&lt;number, ApiError&gt;</code></summary>
 
 <dl>
 <dd>
@@ -25,7 +25,7 @@ Calculates the expression using the specified operation.
 
 ```ts
 try {
-  const response = await client.calculate({ operation: OperationType.Sum, x: 4, y: 5 });
+  const response = await client.calculate({ operation: OperationType.Sum, x: 1.5, y: 1.5 });
   // TODO: Handle 'response' of type number
 } catch (err) {
   // TODO: Handle 'err' of type ApiError, where 'err.payload' is always the Undeclared arm
@@ -41,7 +41,7 @@ try {
 <dd>
 
 ```ts
-const result = await client.calculate({ operation: OperationType.Sum, x: 4, y: 5 }).asApiResult();
+const result = await client.calculate({ operation: OperationType.Sum, x: 1.5, y: 1.5 }).asApiResult();
 // TODO: Use 'result.status' and 'result.headers' to read the raw response status and headers
 if (result.ok) {
   // TODO: Use 'result.value' of type number
@@ -82,7 +82,7 @@ if (result.ok) {
 - **OnSuccess**: <code>[ApiResult](src/core/api-promise.ts)&lt;number, ApiError&gt;</code>, with `result.value` of type <code>number</code>
 - **OnError**: `result.payload` always the <code>[Undeclared](src/core/api-error.ts)</code> arm, with `result.message`
 
-**Thrown**: <code>[ApimaticCalculatorError](src/core/errors.ts)</code> on any operational failure — a caller abort and a programmer error stay outside the family and reach you raw
+**Thrown**: <code>[ApimaticCalculatorTestError](src/core/errors.ts)</code> on any operational failure — a caller abort and a programmer error stay outside the family and reach you raw
 
 </dd>
 </dl>

@@ -1,7 +1,8 @@
 {
-  "name": "demo-vender",
+  "name": "hassan-301-skill-verification-js-sdk",
   "version": "2.3.0",
-  "description": "Simple calculator API hosted on APIMATIC",
+  "description": "USE DEMO TO TEST SKILL ",
+  "homepage": "https://www.acme.org",
   "type": "module",
   "exports": {
     ".": {
@@ -48,7 +49,7 @@
   "scripts": {
     "prepare": "tshy",
     "build": "tshy",
-    "smoke": "node -e \"require('demo-vender')\" && node --input-type=module -e \"import('demo-vender')\"",
+    "smoke": "node -e \"require('hassan-301-skill-verification-js-sdk')\" && node --input-type=module -e \"import('hassan-301-skill-verification-js-sdk')\"",
     "typecheck": "tsc --noEmit",
     "typecheck:dom": "tsc --noEmit -p tsconfig.dom.json",
     "lint": "oxlint --type-aware --max-warnings=0 src",
@@ -57,7 +58,8 @@
   },
   "license": "MIT",
   "author": {
-    "name": "Hassan Sattar"
+    "name": "Hassan",
+    "email": "hassan.sattar@apimatic.io"
   },
   "repository": {
     "type": "git",

@@ -1,13 +1,13 @@
-# APIMATIC Calculator
+# APIMATIC Calculator-test
 
 [![Built with APIMatic][apimatic-badge]][apimatic-url] [![License: MIT][license-badge]][license-url]
 
-The APIMATIC Calculator SDK for TypeScript provides typed access to the APIMATIC Calculator REST APIs from Node.js and the browser.
+The APIMATIC Calculator-test SDK for TypeScript provides typed access to the APIMATIC Calculator-test REST APIs from Node.js and the browser.
 
 > [!TIP]
 > **Looking for a specific signature, request field, model, enum or error type?** This SDK ships a generated, machine-readable **[SDK map](sdk-map.md)** — a lookup index of the whole TypeScript surface. Consult it **before** grepping or scanning the source tree; it answers most contract questions directly and, where a source file is genuinely needed, names the exact one to open. Details under [SDK map](#sdk-map).
 
-Simple calculator API hosted on APIMATIC
+Simple calculator API hosted on APIMATIC for demo purposes
 
 ---
 
@@ -16,7 +16,7 @@ Simple calculator API hosted on APIMATIC
 To add the SDK to your project from npm:
 
 ```bash
-npm install demo-vender
+npm install hassan-301-skill-verification-js-sdk
 ```
 
 To install from the SDK source instead, compile it to `dist/` — run its `build` script once in the SDK folder — then add it to your project by path:
@@ -32,21 +32,21 @@ npm install <path-to-sdk>
 Create one client and reuse it. Configure its behaviour through [ClientOptions](src/client-options.ts).
 
 ```ts
-import { ApimaticCalculatorClient } from "demo-vender";
+import { ApimaticCalculatorTestClient } from "hassan-301-skill-verification-js-sdk";
 
-const client = new ApimaticCalculatorClient({});
+const client = new ApimaticCalculatorTestClient({});
 ```
 
-Nothing in `ClientOptions` is required — `new ApimaticCalculatorClient()` compiles — and each option left out falls back to its default. This API declares one environment, so there is no environment to select and no host to state at the construction site.
+Nothing in `ClientOptions` is required — `new ApimaticCalculatorTestClient()` compiles — and each option left out falls back to its default. This API declares one environment, so there is no environment to select and no host to state at the construction site.
 
 ### From CommonJS
 
 The package ships both dialects from a single entry, so `require` works with full types. In a TypeScript CommonJS file use the `import ... = require(...)` form — a plain destructuring `require` runs fine but gives you `any`.
 
 ```ts
-import sdk = require("demo-vender");
+import sdk = require("hassan-301-skill-verification-js-sdk");
 
-const client = new sdk.ApimaticCalculatorClient({});
+const client = new sdk.ApimaticCalculatorTestClient({});
 ```
 
 ---

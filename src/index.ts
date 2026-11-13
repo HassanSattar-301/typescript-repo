@@ -1,10 +1,10 @@
-export { ApimaticCalculatorClient } from "./client.js";
+export { ApimaticCalculatorTestClient } from "./client.js";
 export type { ClientOptions } from "./client-options.js";
 
 export { OperationType, operationTypeSchema } from "./models/operation-type.js";
 
 export {
-  CoreError as ApimaticCalculatorError,
+  CoreError as ApimaticCalculatorTestError,
   ResponseError,
   DecodeError,
   EncodeError,
@@ -38,4 +38,4 @@ export type { RetryOptions, RequestRetryOptions, RetryAttempt, RetryReason } fro
 export type { BinaryContent, BinaryData, BinaryErrorContent, FileData, FileInput } from "./core/binary.js";
 export type { ErrorKind } from "./core/errors.js";
 export type { Declared, Undeclared } from "./core/api-error.js";
-export type { Schema, EnumSchema, Encoded } from "./core/validation/schema.js";
+export type { Schema, EnumSchema, Encoded, ValidationResult, JsonValue } from "./core/validation/schema.js";
